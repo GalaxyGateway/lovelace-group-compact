@@ -3,7 +3,7 @@
 Below you can find an alternative way to get group control.
 Additional custom cards are required from HACS: "stack-in-card" to combine multiple cards into 1, "mushroom" for layout and templating and "card_mod" to make it all look pretty.
 
-<img width="1301" alt="image" src="https://github.com/user-attachments/assets/7c8227a7-4609-4b85-a3a3-a31765a2a4d0">
+<img width="1359" height="339" alt="image" src="https://github.com/user-attachments/assets/34095eb2-0ee4-476d-a119-bccf67355a8f" />
 
 ```
 type: custom:stack-in-card
