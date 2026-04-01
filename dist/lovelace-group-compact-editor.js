@@ -2,7 +2,7 @@
 // Loaded automatically via dynamic import() in lovelace-galaxy-compact.js.
 // Do not register as a separate Lovelace resource.
 
-class GalaxyCompactEditor extends HTMLElement {
+class GalaxyGroupCompactEditor extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
@@ -232,4 +232,4 @@ class GalaxyCompactEditor extends HTMLElement {
   }
 }
 
-customElements.define('lovelace-galaxy-compact-editor', GalaxyCompactEditor);
+customElements.define('lovelace-group-compact-editor', GalaxyGroupCompactEditor);
