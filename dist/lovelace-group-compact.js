@@ -1,12 +1,12 @@
 console.info(
-  "%c  lovelace-galaxy-compact  \n%c Version 2.7.0",
+  "%c  lovelace-group-compact  \n%c Version 2.7.0",
   "color: orange; font-weight: bold; background: black",
   "color: white; font-weight: bold; background: dimgray"
 );
 
 window.customCards = window.customCards || [];
 window.customCards.push({
-  type: "lovelace-galaxy-compact",
+  type: "lovelace-group-compact",
   name: "Galaxy Compact Row",
   description: "Compact mushroom-style row card for a Honeywell Galaxy group.",
   preview: true,
@@ -50,7 +50,7 @@ function mdiIcon(key, color, size) {
 }
 
 // ─── Main card ────────────────────────────────────────────────────────────────
-class GalaxyCompactCard extends HTMLElement {
+class GalaxyGroupCompactCard extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -94,8 +94,8 @@ class GalaxyCompactCard extends HTMLElement {
   }
 
   static async getConfigElement() {
-    await import("./lovelace-galaxy-compact-editor.js");
-    return document.createElement("lovelace-galaxy-compact-editor");
+    await import("./lovelace-group-compact-editor.js");
+    return document.createElement("lovelace-group-compact-editor");
   }
 
   static getStubConfig() {
@@ -394,4 +394,4 @@ ${keypad}
   getCardSize() { return 1; }
 }
 
-customElements.define("lovelace-galaxy-compact", GalaxyCompactCard);
+customElements.define("lovelace-group-compact", GalaxyGroupCompactCard);
